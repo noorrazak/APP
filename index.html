@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOOR</title>
 <style>
+
     .carousel-item img {
         max-height: 500px;
         object-fit: cover;
@@ -13,11 +14,49 @@
     
     .col-md-4 img {
    
-        max-height: 200px;
+        max-height:200px;
         
     }
 
+    @media only screen and (min-width:360px) and (max-width: 640px)
+ { 
+
+
+
+
+    .card-body
+  {
+width:105%;
+    
+    }
+
+    article{
+      padding:30%;
+     
+    }
+    main{
+        margin-left: 0%;
+}
+.col-md-4 img {
+   
+   max-height:120px;
+   
+}
+
+.col-md-8  {
+
+    max-height:95px;
+    font-size: x-small;
+}
+
+
+.card-title{
+    margin: auto;
+background-color: darkorange;
+font-size:15px;
+}
   
+}  
 
 </style>
 
@@ -26,7 +65,7 @@
 
 
 
-   <!-- Font Awesome -->
+   <!-- Font Awesome كود سي اس اس-->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 rel="stylesheet"
@@ -49,10 +88,10 @@ rel="stylesheet"
 
 <body>
 
+<samp><!-- شريط متحرك-->
 
-<header>
 
-<!-- شريط متحرك-->
+
     <DIV align=center>
         <TABLE style="BORDER-COLLAPSE: collapse" width="100%" border=2>
         <TBODY>
@@ -60,12 +99,11 @@ rel="stylesheet"
         <TD class=alt1 colSpan=3><B><FONT size=4>
         <MARQUEE onmouseover=this.stop() onmouseout=this.start() scrollAmount=12 scrollDelay=0 direction=right width="100%" bgColor=#ffffcc height=25><FONT color=red size=4>لا إِله إلا انت سبحانك ربى اني كنت من الظالمين - حسبى الله لا اله الا هو عليه توكلت وهو رب العرش العظيم - رضيت بالله ربا وبالاسلام دينا ومحمد عليه افضل الصلاة والسلام نبيا - لا حول ولا قوة الا بالله العلى العظيم - يارب لك الحمد كما ينبغى لجلال وجهك وعظيم سلطانك - اللهم صلى وسلم وبارك على سيدنا ونبينا محمد عليه افضل الصلاة والسلام - سبحان الله والحمد لله ولا اله الا الله والله اكبر - حسبنا الله ونعم الوكيل - استغفر الله العظيم من كل ذنب عظيم </FONT> </MARQUEE></FONT></B></TD></TR></TBODY></TABLE></DIV>
        
-        
-</header>
-
+    
+</samp>
    
 
-    <header>
+    <header><!-- صور متغيرة-->
     <!-- Carousel wrapper -->
 <div
 id="carouselBasicExample"
@@ -217,8 +255,9 @@ data-mdb-ride="carousel"
 </header>
 
 
-<main style="margin:auto ; max-width:700px; ">
 
+
+<main style="margin:auto ; max-width:700px;  ">  <!-- كارت-->
 
     <div class="card mb-3" style="max-width:2000px; max-height: 200px;margin: 10px; ">
         <div class="row g-0">
@@ -267,35 +306,32 @@ data-mdb-ride="carousel"
           </div>
         </div>
       </div>
-    
 </main>
 
-<!-- خريطة كوكل -->
 
+
+
+
+
+<article><!-- خريطة كوكل -->
 <footer style="margin: auto;max-width:500px;">
 
     <div class="card mb-3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2031.3705976595195!2d44.349259947312724!3d32.02102996568215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x155ed6e2d20545b3%3A0xc542144a0d7569c6!2sGame%20Zone!5e1!3m2!1sen!2siq!4v1617013395271!5m2!1sen!2siq" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2031.3705976595195!2d44.349259947312724!3d32.02102996568215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x155ed6e2d20545b3%3A0xc542144a0d7569c6!2sGame%20Zone!5e1!3m2!1sen!2siq!4v1617013395271!5m2!1sen!2siq" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">
             This is a wider card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.
           </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
+   
         </div>
       </div>
-      
-    
-
-
-
-
-
 </footer>
-    <!-- شريط فيس بك -->
+</article>
+
+
+    <!-- علامة فيس بك -->
 <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgb(102, 40, 40); color: rgb(146, 240, 23);">
@@ -306,7 +342,7 @@ data-mdb-ride="carousel"
   </footer>
 
 
-<!-- MDB -->
+<!-- MDB كود جافا-->
 <script
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
