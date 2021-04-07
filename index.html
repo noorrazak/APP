@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <title>NOOR</title>
 
    
@@ -12,21 +16,99 @@
 
 <style>
 
-    .carousel-item img {
-        max-height: 500px;
-        object-fit: cover;
+
+
+    .carousel-inner img {
+     
+ width: 100%;
+ max-height: 600px;
+       
     }
+
+
     
-    .col-md-4 img {
+    img {
    
         max-height:200px;
         
     }
 
+ 
+
     
-    @media only screen and (min-width:360px) and (max-width: 640px)
+    @media only screen and (min-width:500px) and (max-width: 505px)
+ { 
+.noor{
+
+margin: 120px;
+
+}
+   
+
+
+
+    .card-body
+  {
+width:105%;
+    
+    }
+
+    article{
+      padding:30%;
+
+  
+     
+    }
+    main{
+        margin-left: 0%;
+}
+.col-md-4 img {
+   
+   max-height:120px;
+   
+}
+
+.col-md-8  {
+
+    max-height:95px;
+    font-size: x-small;
+}
+
+
+.card-title{
+    margin: auto;
+background-color: darkorange;
+font-size:15px;
+}
+
+.card-title1{
+
+    background-color: rgb(75, 224, 30);
+    font-size: 15px;
+
+}
+.card-text1{
+
+font-size: x-small;
+margin: auto;
+}
+
+
+
+
+
+
+
+}  
+
+
+@media only screen and (min-width:360px) and (max-width: 640px)
  { 
 
+  .navbar-toggler-icon {
+    
+    background-color: rgb(135, 166, 207);
+  }
 
 
 
@@ -75,8 +157,21 @@ margin: auto;
 }
 
 
-  
+
+
+
 }  
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
 
@@ -85,261 +180,101 @@ margin: auto;
 
 
 
-   <!-- Font Awesome كود سي اس اس-->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
-rel="stylesheet"
-/>
-</head>
-
 
 
 
 
 <body>
 
+  
+
 
 
 <!-- nav شريط القوائم العلوي -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+ 
+  <a class="navbar-brand badge badge-danger rounded-circle" href="#"> <h6>My adventure</h6></a>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarLeftAlignExample"
-      aria-controls="navbarLeftAlignExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon "></span>
+  </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <!-- Navbar dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-            >Disabled</a
-          >
-        </li>
-      </ul>
-      <!-- Left links -->
-    </div>
-    <!-- Collapsible wrapper -->
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
   </div>
-  <!-- Container wrapper -->
 </nav>
 
+<!-- صور متغيرة-->
 
+<header>
 
-   
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-    <header><!-- صور متغيرة-->
-    <!-- Carousel wrapper -->
-<div
-id="carouselBasicExample"
-class="carousel slide carousel-fade"
-data-mdb-ride="carousel"
->
-<!-- Indicators -->
-<div class="carousel-indicators">
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="0"
-    class="active"
-    aria-current="true"
-    aria-label="Slide 1"
-  ></button>
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="1"
-    aria-label="Slide 2"
-  ></button>
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="2"
-    aria-label="Slide 3"
-  ></button>
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
 
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="3"
-    aria-label="Slide 4"
-  ></button>
-
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="4"
-    aria-label="Slide 5"
-  ></button>
-
-
-
-
-</div>
-
-
-
-
-
-<!-- Inner -->
-<div class="carousel-inner">
-  <!-- Single item -->
-  <div class="carousel-item active">
-    <img
-      src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-      class="d-block w-100"
-      alt="..."
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>First slide label</h5>
-
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="12.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="12.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="12.jpg" alt="New York">
     </div>
   </div>
 
-  <!-- Single item -->
-  <div class="carousel-item ">
-    <img
-      src="https://scx2.b-cdn.net/gfx/news/hires/2019/2-nature.jpg"
-      class="d-block w-100"
-      alt="..."
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>NOOR</h5>
-      <p>hello.</p>
-    </div>
-  </div>
-
-   <!-- Single item -->
-   <div class="carousel-item ">
-    <img
-      src="https://scx2.b-cdn.net/gfx/news/hires/2019/2-nature.jpg"
-      class="d-block w-100"
-      alt="..."
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>NOOR</h5>
-      <p>hello.</p>
-    </div>
-  </div>
-  <!-- Single item -->
-  <div class="carousel-item">
-    <img
-      src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-      class="d-block w-100"
-      alt="..."
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Second slide label</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-
-  <!-- Single item -->
-  <div class="carousel-item">
-    <img
-      src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-      class="d-block w-100"
-      alt="..."
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Third slide label</h5>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </div>
-  </div>
-</div>
-</div>
-<!-- Inner -->
-
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 
 </div>
-
-
-
-<!-- Controls -->
-<button
-  class="carousel-control-prev"
-  type="button"
-  data-mdb-target="#carouselBasicExample"
-  data-mdb-slide="prev"
->
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button
-  class="carousel-control-next"
-  type="button"
-  data-mdb-target="#carouselBasicExample"
-  data-mdb-slide="next"
->
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-</div>
-<!-- Carousel wrapper -->
 </header>
 
 
+  
+ 
 
+<!-- كارت-->
 
-<main style="margin:auto ; max-width:700px;  ">  <!-- كارت-->
+<main style="margin:auto ; max-width:700px;  ">  
 
     <div class="card mb-3" style="max-width:2000px; max-height: 200px;margin: 10px; ">
         <div class="row g-0">
          
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title text-center">Card title</h5>
+              <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
@@ -380,6 +315,70 @@ data-mdb-ride="carousel"
           </div>
         </div>
       </div>
+
+
+      <div class="card mb-3" style="max-width:2000px; max-height: 200px;margin: 10px; ">
+        <div class="row g-0">
+         
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="http://cosmos.tt123.com.au/wp-content/uploads/2020/02/191010_nature.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card mb-3" style="max-width:2000px; max-height: 200px;margin: 10px; ">
+        <div class="row g-0">
+         
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="http://cosmos.tt123.com.au/wp-content/uploads/2020/02/191010_nature.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="noor card bg-dark text-white" style="max-width:2000px; max-height: 200px;margin:40px; border:6px saddlebrown solid">
+        <img
+          src="https://mdbootstrap.com/img/new/slides/017.jpg"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-img-overlay">
+          <h5 class="card-title7">Card title1</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.
+          </p>
+          <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+
 </main>
 
 
@@ -405,22 +404,45 @@ data-mdb-ride="carousel"
 </article>
 
 
-    <!-- علامة فيس بك -->
-<footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgb(102, 40, 40); color: rgb(146, 240, 23);">
-      © 2021 NOOR R:
-      <a class="text-dark" style="background-color: rgb(100, 230, 14); border: crimson;"  href="https://facebook.com/">facebook</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+
+
+
+
+<footer class="text-center text-white" style="background-color: #45637d;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Iframe -->
+    <section class="">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6" >
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="shadow-1-strong rounded"
+              src="https://www.youtube.com/embed/vlDzYIIOYmM"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Iframe -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 
 <!-- MDB كود جافا-->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
-></script>  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
 
 
 
